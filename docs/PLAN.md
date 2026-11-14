@@ -1,5 +1,7 @@
 # ZeroHour build plan (for coding agents)
 
+> **Historical.** This was the build plan for HackUTD 2026 (Nov 7 to 8, 2026), written when the app was still called ZeroHour; it shipped as HAVEN. The contracts in sections 3 to 6 still match the code and are referenced from code comments. The step cards, gates and timeline no longer apply. For what exists now, read `README.md` and `docs/THREAT_MODEL.md`.
+
 This file is the technical source of truth for building ZeroHour at HackUTD 2026 (Nov 7 to 8). Humans read the summary doc; agents read this. If something here conflicts with your training data about Spacetime or Next.js, this file and the installed package sources win. If something here conflicts with `docs/THREAT_MODEL.md`, stop and ask a human.
 
 **How to use it:** find your step card in section 10, read sections 3 to 6 for the contracts it touches, do the work, run the checks in section 12, then update the status column in `docs/THREAT_MODEL.md` for any mitigation you implemented.

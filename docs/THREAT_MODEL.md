@@ -1,10 +1,10 @@
-# ZeroHour threat model
+# HAVEN threat model
 
 **Status legend:** Planned (designed, not built yet), Done (built and verified by the listed test or demo), Accepted (a known limit, stated openly), Downgraded (a fallback was taken; see note). Keep this table honest: never mark a row Done without the proof existing in the repo.
 
 ## Assumptions
 
-- **Attacker capabilities (Winstead's rule):** full control of the victim's network, and full access to the ZeroHour server and database: they can read every table, run SQL as the owner, edit or delete rows, replay traffic, and publish a modified module.
+- **Attacker capabilities (Winstead's rule):** full control of the victim's network, and full access to the HAVEN server and database: they can read every table, run SQL as the owner, edit or delete rows, replay traffic, and publish a modified module.
 - **What we trust:** each responder's own device and browser while it is not compromised; the incident commander's device as the root of trust; the out-of-band channel used to hand over an invite link (in person, phone call, Signal).
 - **Security goal:** the server learns structure (ids, roles, timestamps, sizes) but never content, and cannot forge, reorder, roll back or silently delete anything without every client detecting it. Availability against a malicious server is out of scope (it can always go offline).
 

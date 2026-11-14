@@ -1,4 +1,4 @@
-// ZeroHour Spacetime module (docs/PLAN.md section 5).
+// HAVEN Spacetime module (docs/PLAN.md section 5).
 //
 // Design rules (AGENTS.md):
 // - All tables are private. Clients read only the `my_*` views and write only

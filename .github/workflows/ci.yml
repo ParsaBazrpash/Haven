@@ -1,7 +1,9 @@
 name: CI
 
 on:
+  # Pull requests run on pull_request. Running on every branch push as well would build each PR twice.
   push:
+    branches: [main]
   pull_request:
   # Run by hand to scan the full git history with gitleaks.
   workflow_dispatch:

@@ -5,7 +5,7 @@
 // invite creation) and `code` plus `joinTag` (at redemption) ever reach the
 // module. The secret is never sent.
 
-import { bytesToHex, inviteInput, joinInput } from '@/spacetimedb/src/shared/encoding';
+import { inviteInput, joinInput } from '@/spacetimedb/src/shared/encoding';
 import {
   HASH_LEN,
   INVITE_CODE_LEN,
@@ -116,6 +116,3 @@ export function parseInviteFragment(fragment: string): InviteFragment | null {
     return null;
   }
 }
-
-export const inviteCodeHashHex = (incidentId: string, code: Uint8Array): string =>
-  bytesToHex(inviteCodeHash(incidentId, code));

@@ -1,5 +1,7 @@
 # Lane A plan: Person A (Mehrad), trust core
 
+> **Historical.** The Lane A plan for the HackUTD 2026 weekend (Nov 7 to 8, 2026), kept for the record. The timeline, stop points and branch rules no longer apply.
+
 For Mehrad and his coding agents. Read it with `AGENTS.md` and `docs/PLAN.md`. Parsa's plan is `docs/lanes/PERSON_B.md`; the sections on rules, ownership, timeline and stop points are word for word the same in both files. Times are US Central, Saturday Nov 7 to Sunday Nov 8, 2026.
 
 **Your job:** make the server unable to read or rewrite anything, and make every browser able to prove it. You own the Spacetime module, the crypto library, the real client, revoke and rekey, and the hardening.

@@ -23,7 +23,7 @@ import { SpacetimeBackend, type TokenStore } from '@/lib/client/spacetime-backen
 import { bytesToHex } from '@/spacetimedb/src/shared/encoding';
 
 const HOST = process.env.NEXT_PUBLIC_SPACETIMEDB_HOST || 'wss://maincloud.spacetimedb.com';
-const DB = process.env.NEXT_PUBLIC_SPACETIME_DB_NAME || process.env.NEXT_PUBLIC_SPACETIMEDB_DB_NAME || 'zerohour-hackutd26';
+const DB = process.env.NEXT_PUBLIC_SPACETIMEDB_DB_NAME || 'zerohour-hackutd26';
 const SERVER = process.env.SPACETIME_SERVER || 'maincloud';
 const hasCli = spawnSync('spacetime', ['--version'], { encoding: 'utf8' }).status === 0;
 
