@@ -8,13 +8,13 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
-# ZeroHour: rules for coding agents
+# HAVEN: rules for coding agents
 
-ZeroHour is an end-to-end encrypted, tamper-evident ransomware war room built on SpacetimeDB for HackUTD 2026 (Winstead + Spacetime tracks). Two humans, two lanes, about 20 hours. AI judges will read this repo, so correctness and honesty matter more than feature count.
+HAVEN is an end-to-end encrypted, tamper-evident ransomware war room built on SpacetimeDB for HackUTD 2026 (Winstead + Spacetime tracks). Its working name was ZeroHour, so the database name, the IndexedDB store and the `zh1/` domain tags still say so; never rename those. The repo is public, so correctness and honesty matter more than feature count.
 
 ## Start here
 
-1. Read `docs/PLAN.md`: find your step card in section 10, then read the contract sections it touches (sections 3 to 6).
+1. Read `docs/PLAN.md` sections 3 to 6 for the contracts. The step cards and timeline in the rest of it are the hackathon plan and are historical.
 2. Read `docs/THREAT_MODEL.md` and keep its status column honest for anything you build or change.
 3. For Spacetime APIs, trust `docs/PLAN.md` section 5 and the installed sources in `node_modules/spacetimedb/src/` over memory. The TypeScript module API changed a lot in 2.x.
 4. For Next.js, follow the block above: read `node_modules/next/dist/docs/` first.
@@ -37,7 +37,7 @@ ZeroHour is an end-to-end encrypted, tamper-evident ransomware war room built on
 
 ## Commands
 
-- `npm run dev` (Next on port 3001; local Spacetime uses 3000)
+- `npm run dev` (Next on port 3000. A local Spacetime server also uses 3000, so with one running use `npm run dev -- -p 3001`)
 - `npm run spacetime:publish`, then `npm run spacetime:generate` after every module change
 - `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, `npm run test:e2e`
 

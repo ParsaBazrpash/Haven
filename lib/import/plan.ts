@@ -7,7 +7,6 @@ import { convertSeverity, type PlatformId } from '@/lib/import/platforms';
 import { sourceLine } from '@/lib/import/label';
 import type { Row } from '@/lib/import/csv';
 import {
-  EvidenceBodySchema,
   ScopeBodySchema,
   TimelineBodySchema,
   type EvidenceBody,
@@ -295,11 +294,6 @@ export function buildPlan(input: PlanInput): ImportPlan {
     notImported: notImported.map((n) => `${n}: not imported (limit ${MAX_EVENTS} per import)`),
     rowCount: input.rows.length,
   };
-}
-
-/** True when the evidence body passes the record schema (used before offering the plan). */
-export function evidenceIsValid(body: Omit<EvidenceBody, 'evidenceId'>): boolean {
-  return EvidenceBodySchema.safeParse({ evidenceId: PLACEHOLDER_ID, ...body }).success;
 }
 
 // --- Sending -----------------------------------------------------------------

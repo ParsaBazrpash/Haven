@@ -1,5 +1,7 @@
 # Lane B plan: Person B (Parsa), product
 
+> **Historical.** The Lane B plan for the HackUTD 2026 weekend (Nov 7 to 8, 2026), kept for the record. The timeline, stop points and branch rules no longer apply.
+
 For Parsa and his coding agents. Read it with `AGENTS.md` and `docs/PLAN.md`. Mehrad's plan is `docs/lanes/PERSON_A.md`; the sections on rules, ownership, timeline and stop points are word for word the same in both files. Times are US Central, Saturday Nov 7 to Sunday Nov 8, 2026.
 
 **Your job:** make the security visible and the product usable: the war room, the legal clock, the join and admit ceremony, the report, the README, Devpost and the video. You build on a mock that speaks the real `IncidentClient`, so you never wait for the backend.

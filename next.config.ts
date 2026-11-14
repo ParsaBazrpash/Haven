@@ -3,7 +3,10 @@ import { canonicalHostRedirects } from "./lib/security/canonical-host";
 import { pwaHeaders, securityHeaders } from "./lib/security/headers";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // The after-action report prints the build commit. Vercel provides VERCEL_GIT_COMMIT_SHA at build time.
+  env: {
+    NEXT_PUBLIC_COMMIT_SHA: process.env.NEXT_PUBLIC_COMMIT_SHA || process.env.VERCEL_GIT_COMMIT_SHA || "",
+  },
   experimental: {
     agentFeedback: true,
   },

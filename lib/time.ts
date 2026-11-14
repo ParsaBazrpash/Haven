@@ -1,5 +1,3 @@
-export const SEVENTY_TWO_HOURS_MS = 72 * 60 * 60 * 1000;
-
 export function formatDuration(ms: number): string {
   const negative = ms < 0;
   const totalSeconds = Math.floor(Math.abs(ms) / 1000);

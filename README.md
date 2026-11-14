@@ -16,7 +16,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | --- | --- |
 | `npm run dev` | Next.js dev server |
 | `npm run lint` | ESLint |
-| `npm run typecheck` | `tsc --noEmit` |
+| `npm run typecheck` | `tsc --noEmit` for the app and for the Spacetime module |
 | `npm run test` | Vitest unit tests |
 | `npm run test:watch` | Vitest in watch mode |
 | `npm run build` | Production build |
@@ -26,14 +26,16 @@ Open [http://localhost:3000](http://localhost:3000).
 | `npm run spacetime:publish` | Publish the module to Maincloud (owner only) |
 | `npm run spacetime:generate` | Regenerate `src/module_bindings` after a module change |
 | `npm run test:live` | Real-crypto scripts against Maincloud in `live/` (needs the Spacetime CLI logged in as the owner) |
+| `npm run test:live:browser` | Playwright through the real screens against Maincloud (`live/browser/`) |
+| `npm run seed:demo` | Plays the Lakeside demo story into the real database (`live/seed/`) |
 
 Without a published module, set `NEXT_PUBLIC_ZH_MOCK=1` in `.env.local`. The mock keeps everything in this browser and sends nothing. Any other value uses the real client against the database named in `NEXT_PUBLIC_SPACETIMEDB_HOST` and `NEXT_PUBLIC_SPACETIMEDB_DB_NAME`.
 
 ## Stack
 
-Next.js 16.4.5, React 19.3.0, Tailwind CSS 4.3.5, TypeScript 5.9.3, Zod 4.6.7, Lucide React 1.70.0, Vitest 3.2.7, Playwright 1.65.0.
+Next.js 16.4.5, React 19.3.0, Tailwind CSS 4.3.5, TypeScript 5.9.3, Zod 4.6.7, Lucide React 1.70.0, Vitest 5.1.0, Playwright 1.65.0.
 
-Read [docs/PLAN.md](docs/PLAN.md) for the build phases and [AGENTS.md](AGENTS.md) for the security rules.
+Read [docs/PLAN.md](docs/PLAN.md) for the original build plan and the contracts, and [AGENTS.md](AGENTS.md) for the security rules.
 
 ## Publishing the module
 

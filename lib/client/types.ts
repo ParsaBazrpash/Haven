@@ -251,7 +251,7 @@ export interface IncidentState {
   deadlineUpdates: Record<string, DeadlineUpdate>;
   evidence: Evidence[];
   integrity: IntegrityReport;
-  /** Org roster and paging (WP0). Null and empty until the org features are built. */
+  /** Org roster and paging (WP0). Null and empty until this device creates or joins an org. */
   org: OrgView | null;
   roster: RosterMember[];
   pages: PageView[];

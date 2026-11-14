@@ -1,4 +1,4 @@
-# Lane ownership for ZeroHour. The plans are docs/lanes/PERSON_A.md (Mehrad)
+# Lane ownership for HAVEN. The plans are docs/lanes/PERSON_A.md (Mehrad)
 # and docs/lanes/PERSON_B.md (Parsa). GitHub asks the owner to review when the
 # other person's PR touches these paths. Keep "Require review from Code Owners"
 # off in the ruleset: an owner cannot approve their own PR. Last match wins.
@@ -22,7 +22,6 @@
 /public/                    @ParsaBazrpash
 /README.md                  @ParsaBazrpash
 /docs/DEVPOST.md            @ParsaBazrpash
-/docs/PRODUCT.md            @ParsaBazrpash
 /.github/workflows/         @ParsaBazrpash
 
 # Lane A (Mehrad): trust core and shared config
@@ -46,7 +45,6 @@
 /.env.example               @theMehrad
 /.gitignore                 @theMehrad
 /next.config.ts             @theMehrad
-/proxy.ts                   @theMehrad
 
 # Contract (frozen after Sync 1) and the lane plans: both must agree.
 /lib/client/types.ts        @theMehrad @ParsaBazrpash
